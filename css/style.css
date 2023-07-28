@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/*.5rem = 8px | 1rem = 16px ...*/
+
+body{
+    height: 100%;
+    background: url(../images/bg01.jpg) #000 no-repeat center top;
+    font-family: 'STHeiti', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    background-size: 100% auto;
+}
+
+.container{
+    /* max-width: 1124px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*=============== 公告跑馬燈 ===============*/
+.marquee-1 {
+    min-height: 1rem;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    background: #000000c7;
+    /* background: RED; */
+    padding: .2rem;
+    font-size: 14px;
+    height: 3vh;
+}
+
+.marquee-1 div.marquee-1-content {
+    height: 100% !important;
+    /*    min-height: 200px;*/
+    width: 100%;
+    overflow: hidden;
+    color: #999;
+}
+
+.marquee-1_newicon {
+    width: 6rem;
+    background: url('../images/news.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 1.4rem;
+    background-position: left center;
+    line-height: 1.4rem;
+    color: #ffeaa7;
+}
+
+.marquee-1_newicon span{
+    margin-left: 5px;
+}
+
+/*=============== MAIN ===============*/
+.main{
+    overflow: hidden;
+    height: 95vh;
+    /* background: yellow; */
+}
+
+/* .main>div {
+    flex-grow: 1;
+} */
+
+/*=============== LOGO ===============*/
+.main .logo {
+    height: 45.5vh;
+    height: 8.7vh;
+    margin: 2vh auto;
+    /* background: orange; */
+}
+
+.logo img {
+    height: 100%;
+}
+
+/*=============== 輪播 ===============*/
+.swiper {
+    width: 100%;
+    height: 52.3vh;
+    /* background: purple; */
+}
+
+.swiper-wrapper{
+    /* margin-top: 2vh; */
+}
+
+.swiper-slide{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    padding-bottom: 3vh;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+    /* width: 18.5%; */
+}
+
+.swiper-pagination-bullet{
+    background: #cbc8d3 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #ffe9a0 !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0.5vh !important;
+}
+
+/* .my_container{
+    height: 100%;
+} */
+
+.main01{
+    width: 24.5% !important;
+}
+
+.main02{
+    width: 18% !important;
+}
+
+.main03{
+    width: 18.6% !important;
+}
+
+.main04{
+    width: 20.6% !important;
+}
+
+.main05{
+    width: 18.6% !important;
+}
+
+/*=============== 選單 ===============*/
+.menu{
+    height: 32vh;
+    /* height: 84.3vh; */
+    /* background: green; */
+}
+.navi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vh;
+    /* margin: 0 auto 2.5vh; */
+    position: relative;
+}
+
+.navi>li {
+    box-sizing: border-box;
+    width: 79%;
+}
+
+/*=============== RWD ===============*/
+@media screen and (max-width: 1024px){
+    .main01{
+        width: 76.5% !important;
+    }
+    
+    .main02{
+        width: 51% !important;
+    }
+    
+    .main03{
+        width: 52% !important;
+    }
+    
+    .main04{
+        width: 58% !important;
+    }
+    
+    .main05{
+        width: 52% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 430px){
+    .main01{
+        width: 93.5% !important;
+    }
+    
+    .main02{
+        width: 79% !important;
+    }
+    
+    .main03{
+        width: 81% !important;
+    }
+    
+    .main04{
+        width: 91% !important;
+    }
+    
+    .main05{
+        width: 82% !important;
+    }
+}
+
+@media screen and (max-width:375px){
+    .swiper-pagination-bullet{
+        width: 6px !important;
+        height: 6px !important;
+    }
+}
+
+@media screen and (max-width:375px) and (max-height:667px){
+    .main01{
+        width: 93.5% !important;
+    }
+    
+    .main02{
+        width: 66% !important;
+    }
+    
+    .main03{
+        width: 67% !important;
+    }
+    
+    .main04{
+        width: 74% !important;
+    }
+    
+    .main05{
+        width: 67% !important;
+    }
+}
+
