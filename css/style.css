@@ -113,7 +113,7 @@ body{
     height: 9%;
     /* height: 8.7vh; */
     /* height: 45.5vh; */
-    margin: 2vh auto;
+    margin: 1vh auto 0;
     /* background: orange; */
 }
 
@@ -190,7 +190,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    gap: 1vh;
+    gap: .3vh;
     /* margin: 0 auto 2.5vh; */
     position: relative;
 }
