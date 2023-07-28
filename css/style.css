@@ -75,7 +75,8 @@ body{
 }
 
 .marquee-1_newicon {
-    width: 6rem;
+    width: 100%;
+    max-width: 6em;
     background: url('../images/news.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -83,6 +84,7 @@ body{
     background-position: left center;
     line-height: 1.4rem;
     color: #ffeaa7;
+    height: 100%;
 }
 
 .marquee-1_newicon span{
