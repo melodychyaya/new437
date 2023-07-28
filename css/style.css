@@ -22,9 +22,14 @@ img {
 }
   
 /*.5rem = 8px | 1rem = 16px ...*/
+html{
+    height: 100%;
+    max-height: 100vh;
+}
 
 body{
     height: 100%;
+    max-height: 100vh;
     background: url(../images/bg01.jpg) #000 no-repeat center top;
     font-family: 'STHeiti', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
     font-size: 1rem;
