@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 12px !important;
 }
 
 *::before,*::after{
@@ -241,8 +240,8 @@ body{
 
 @media screen and (max-width: 430px){
     .main01{
-        /* width: 93.5% !important; */
-        width: 100% !important;
+        width: 93.5% !important;
+        /* width: 100% !important; */
     }
     
     /* .main02{
