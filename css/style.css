@@ -76,6 +76,11 @@ body{
     overflow: hidden;
     color: #999;
     /* line-height: 1.4rem; */
+    font-size: 12px !important;
+}
+
+.js-marquee{
+    font-size: 12px !important;
 }
 
 .marquee-1_newicon {
