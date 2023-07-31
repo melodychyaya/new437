@@ -20,6 +20,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+:root {
+    --swiper-navigation-size: 12px;
+}
   
 /*.5rem = 8px | 1rem = 16px ...*/
 html{
@@ -87,10 +91,10 @@ body{
     height: 100%;
 }
 
-.marquee-1_newicon span{
-    /* margin-left: 5px; */
-    /* line-height: 1.4rem; */
-}
+/* .marquee-1_newicon span{
+    margin-left: 5px;
+    line-height: 1.4rem;
+} */
 
 .marquee-1-content span{
     /* line-height: 1.4rem; */
