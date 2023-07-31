@@ -289,4 +289,21 @@ body{
         width: 67% !important;
     } */
 }
+.marquee-1-content{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.marquee-1-content span{
+    animation-name: run;
+    animation: 30s linear 0s infinite run;
+}
 
+@keyframes run {
+    0% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
